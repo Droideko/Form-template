@@ -1,0 +1,189 @@
+@import 'fonts'
+
+*
+   margin: 0
+   padding: 0
+   box-sizing: border-box
+
+h2, h4
+   font-family: Helvetica Neuel, serif
+   color: #e76122
+   text-align: center
+   text-transform: uppercase
+
+p
+   color: #ffffff    
+   text-align: center
+
+a
+   text-decoration: none  
+
+.container-wrapper
+   width: 100%
+   height: 100%
+   background: url('../image/Layer.png') no-repeat 50% 50%/cover
+
+.container
+   max-width: 1200px
+   height: 100vh
+   overflow: hidden
+   margin: 0px auto
+   &-inner
+      max-width: 770px
+      margin: 0px auto
+   &-description
+      padding-top: 100px
+      &__phone
+         font-size: 48px
+      &__location
+         font-family: Open Sans Light, serif
+         font-size: 18px
+         padding: 16px 0px
+      &__icons
+         display: grid
+         grid-template: auto/ repeat(4, 1fr)
+         justify-items: center
+         width: 200px
+         margin: 15px auto
+         a
+            display: block
+            padding: 3px
+      &__subtitle
+         padding: 5px 0px 10px 0px
+         font-size: 30px
+      &__text
+         font-family: Open Sans Italic
+         margin: 10px 0px
+         font-size: 14px
+         line-height: 1.7
+   &-form
+      height: 270px
+      &__wrapper
+         padding-top: 25px
+      &__input
+         height: 160px
+         display: grid
+         grid-template: auto/ repeat(2, 1fr)
+         grid-column-gap: 30px
+         input
+            font-size: 15px
+            font-family: Open Sans Italic, sans-serif
+            border: none
+            border-radius: 3px
+            padding: 0px 10px
+            &::placeholder
+               color: #777777
+               font-family: Open Sans Regular, sans-serif
+               font-size: 15px
+      &__left
+         display: grid
+         grid-template: repeat(3, 1fr)/1fr
+         grid-row-gap: 15px
+      &__right
+         display: grid
+         textarea
+            font-size: 15px
+            font-family: Open Sans Italic, sans-serif
+            resize: none
+            height: 100%
+            width: 100%
+            padding: 10px
+            &::placeholder
+               color: #777777
+               font-family: Open Sans Regular, sans-serif
+               font-size: 15px
+      &__button
+         display: grid
+         justify-items: center
+         margin-top: 30px
+         height: 45px
+         width: 100%        
+         input[type="submit"]
+            width: 170px
+            height: 100%
+            text-transform: uppercase
+            font-family: Open Sans Bold, sans-serif
+            font-size: 16px
+            border-radius: 5px
+            border: none
+            background-color: #5dbdb1
+            color: #fff
+            cursor: pointer
+   &-footer
+      margin-top: 120px
+      display: grid
+      justify-content: center
+      grid-row-gap: 25px
+      &__text
+         text-transform: uppercase
+         font-family: Open Sans Regular
+         font-size: 14px
+      &__arrow-block
+         position: relative
+         a
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+
+@media screen and (max-width: 1024px)
+   .container
+      overflow: visible
+      &-wrapper
+         height: 1000px
+      &-footer
+         &__shape
+            width: 100%
+
+@media screen and (max-width: 824px)
+   .container
+      &-description
+         padding-top: 50px
+         &__phone
+            font-size: 30px
+         &__location
+            font-size: 15px
+            padding: 10px 0px
+         &__icons
+            margin: 10px auto
+         &__subtitle
+            padding: 3px 0px 5px 0px
+         &__text
+            padding: 0px 30px
+      &-form
+         height: 450px
+         &__input
+            height: 350px
+            grid-template: repeat(2, 1fr)/ 1fr    
+            grid-row-gap: 15px
+         &__left
+            height: 150px
+            justify-items: center
+            grid-template: repeat(3, 1fr)/ 1fr
+            input
+               width: 70%
+         &__right
+            justify-items: center
+            textarea
+               width: 70%            
+      &-footer
+         margin-top: 12vw
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+         
+
+
+   
+
+
